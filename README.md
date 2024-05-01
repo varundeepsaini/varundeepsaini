@@ -22,9 +22,8 @@ Here are some of my highlighted projects:
 
 ## 🏆 Achievements
 
-- ![Specialist @Codeforces](https://cp-logo.vercel.app/codeforces/sojabhai?logo=true) 
-- ![4* Coder @CodeChef](https://cp-logo.vercel.app/codechef/varun%20deep%20saini?logo=true)
-
+- ![Expert @Codeforces](https://cp-logo.vercel.app/codeforces/sojabhai?logo=true) 
+- **AIR - 75 ICPC Asia West Regionals 2023**
 ## 👨‍💻 Leadership
 
 - President of NlogN Competitive Programming Club.
