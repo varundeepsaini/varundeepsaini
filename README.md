@@ -22,7 +22,7 @@ Here are some of my highlighted projects:
 
 ## 🏆 Achievements
 
-- ![Expert @Codeforces](https://cp-logo.vercel.app/codeforces/sojabhai?logo=true) 
+- [Expert @Codeforces](https://cp-logo.vercel.app/codeforces/sojabhai?logo=true) 
 - **AIR - 75 ICPC Asia West Regionals 2023**
 ## 👨‍💻 Leadership
 
