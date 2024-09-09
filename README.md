@@ -14,7 +14,7 @@ Here are some of my highlighted projects:
 
 - **Booky**: A book sharing microservice. [![GitHub Repo](https://img.shields.io/badge/GitHub-Booky-blue?style=flat&logo=github)](https://github.com/varundeepsaini/booky)
 - **SQLxPython**: Desktop app for SQL database management. [![GitHub Repo](https://img.shields.io/badge/GitHub-SQLxPython-blue?style=flat&logo=github)](https://github.com/varundeepsaini/sqlxpython)
-- **MultiThreadedProxyWebServer** A proxy server written from scratch in C [![GitHub Repo](https://img.shields.io/badge/GitHub-SQLxPython-blue?style=flat&logo=github)](https://github.com/varundeepsaini/MultiThreadedProxyServerClient)
+- **MultiThreadedProxyWebServer** A proxy server written from scratch in C [![GitHub Repo](https://img.shields.io/badge/GitHub-MultiThreadedProxyServer-blue?style=flat&logo=github)](https://github.com/varundeepsaini/MultiThreadedProxyServerClient)
 
 ## 🛠 Skills
 
