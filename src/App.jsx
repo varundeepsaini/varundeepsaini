@@ -90,6 +90,39 @@ function App() {
     });
   };
 
+  const showTemporaryPopup = (message) => {
+    const popup = document.createElement("div");
+    popup.innerText = message;
+    popup.className = `
+      fixed top-16 right-10 bg-gray-300 dark:bg-gray-700 
+      text-black dark:text-white py-2 px-4 rounded shadow-md
+      transition-opacity duration-300 opacity-0 z-50
+    `;
+
+    document.body.appendChild(popup);
+    setTimeout(() => {
+      popup.classList.add("opacity-100");
+    }, 100); // slight delay to ensure transition
+
+    setTimeout(() => {
+      popup.classList.remove("opacity-100");
+      setTimeout(() => {
+        document.body.removeChild(popup);
+      }, 300); // remove after fading out
+    }, 750); // show for 0.75 seconds
+  };
+
+  const handleCopyPhone = () => {
+    navigator.clipboard.writeText("+917840993353");
+    showTemporaryPopup("Phone number copied!");
+  };
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText("deepsainivarun@gmail.com");
+    showTemporaryPopup("Email copied!");
+  };
+
+
   const education = [
     {
       institution: "Scaler School Of Technology",
@@ -333,29 +366,24 @@ function App() {
           </h1>
           <div className="flex justify-center space-x-4 mt-2 text-gray-600 dark:text-gray-400">
             <div className="flex items-center">
-              <FaPhone className="mr-1" /> +917840993353
-              <button
-                onClick={() => navigator.clipboard.writeText("+917840993353")}
-                className="ml-2 px-2 py-1 bg-gray-300 dark:bg-gray-700 rounded text-sm hover:bg-gray-400 dark:hover:bg-gray-600 transition-colors duration-300"
-              >
-                Copy
-              </button>
-            </div>
+        <FaPhone className="mr-1" /> +917840993353
+        <button
+          onClick={handleCopyPhone}
+          className="ml-2 px-2 py-1 bg-gray-300 dark:bg-gray-700 rounded text-sm hover:bg-gray-400 dark:hover:bg-gray-600 transition-colors duration-300"
+        >
+          Copy
+        </button>
+      </div>
 
-            <a
-              href="mailto:deepsainivarun@gmail.com"
-              className="flex items-center hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300"
-            >
-              <FaEnvelope className="mr-1" /> deepsainivarun@gmail.com
-            </a>
-            <button
-              onClick={() =>
-                navigator.clipboard.writeText("deepsainivarun@gmail.com")
-              }
-              className="px-2 py-1 bg-gray-300 dark:bg-gray-700 rounded text-sm hover:bg-gray-400 dark:hover:bg-gray-600 transition-colors duration-300"
-            >
-              Copy
-            </button>
+      <div className="flex items-center mt-2">
+        <FaEnvelope className="mr-1" /> deepsainivarun@gmail.com
+        <button
+          onClick={handleCopyEmail}
+          className="ml-2 px-2 py-1 bg-gray-300 dark:bg-gray-700 rounded text-sm hover:bg-gray-400 dark:hover:bg-gray-600 transition-colors duration-300"
+        >
+          Copy
+        </button>
+      </div>
             <a
               href="https://linkedin.com/in/varundeepsaini"
               target="_blank"
