@@ -93,11 +93,8 @@ function App() {
   const showTemporaryPopup = (message) => {
     const popup = document.createElement("div");
     popup.innerText = message;
-    popup.className = `
-      fixed top-16 right-10 bg-gray-300 dark:bg-gray-700 
-      text-black dark:text-white py-2 px-4 rounded shadow-md
-      transition-opacity duration-300 opacity-0 z-50
-    `;
+    popup.className =
+      "fixed top-16 right-10 bg-gray-300 dark:bg-gray-700 text-black dark:text-white py-2 px-4 rounded shadow-md transition-opacity duration-300 opacity-0 z-50";
 
     document.body.appendChild(popup);
     setTimeout(() => {
@@ -121,7 +118,6 @@ function App() {
     navigator.clipboard.writeText("deepsainivarun@gmail.com");
     showTemporaryPopup("Email copied!");
   };
-
 
   const education = [
     {
@@ -227,43 +223,43 @@ function App() {
 
   const technicalSkills = {
     languages: [
-      { name: "Python", icon: <FaPython className="text-blue-500" /> },
-      { name: "Java", icon: <FaJava className="text-blue-700" /> },
-      { name: "C++", icon: <SiCplusplus className="text-blue-600" /> },
-      { name: "HTML/CSS", icon: <FaHtml5 className="text-orange-500" /> },
-      { name: "JavaScript", icon: <FaJsSquare className="text-yellow-500" /> },
-      { name: "SQL", icon: <FaDatabase className="text-blue-600" /> },
-      { name: "Golang", icon: <FaGolang className="text-teal-500" /> },
-      { name: "Kotlin", icon: <SiKotlin className="text-purple-500" /> },
-      { name: "Swift", icon: <FaSwift className="text-orange-400" /> },
+      { name: "Python", icon: <FaPython className="text-blue-500 text-3xl" /> },
+      { name: "Java", icon: <FaJava className="text-blue-700 text-3xl" /> },
+      { name: "C++", icon: <SiCplusplus className="text-blue-600 text-3xl" /> },
+      { name: "HTML/CSS", icon: <FaHtml5 className="text-orange-500 text-3xl" /> },
+      { name: "JavaScript", icon: <FaJsSquare className="text-yellow-500 text-3xl" /> },
+      { name: "SQL", icon: <FaDatabase className="text-blue-600 text-3xl" /> },
+      { name: "Golang", icon: <FaGolang className="text-teal-500 text-3xl" /> },
+      { name: "Kotlin", icon: <SiKotlin className="text-purple-500 text-3xl" /> },
+      { name: "Swift", icon: <FaSwift className="text-orange-400 text-3xl" /> },
     ],
     technologies: [
-      { name: "Go Gin", icon: <FaGolang className="text-teal-500" /> },
+      { name: "Go Gin", icon: <FaGolang className="text-teal-500 text-3xl" /> },
       {
         name: "Android Studio",
-        icon: <FaAndroid className="text-green-600" />,
+        icon: <FaAndroid className="text-green-600 text-3xl" />,
       },
-      { name: "GitHub", icon: <FaGithub className="text-gray-800" /> },
-      { name: "BitBucket", icon: <FaGitAlt className="text-orange-600" /> },
-      { name: "Docker", icon: <FaDocker className="text-blue-500" /> },
-      { name: "Linux", icon: <FaLinux className="text-green-700" /> },
-      { name: "Git", icon: <FaGitAlt className="text-orange-600" /> },
-      { name: "FastAPI", icon: <SiFastapi className="text-green-500" /> },
-      { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
-      { name: "PyQT", icon: <FaPython className="text-blue-500" /> },
-      { name: "Tkinter", icon: <FaPython className="text-blue-500" /> },
+      { name: "GitHub", icon: <FaGithub className="text-gray-800 text-3xl" /> },
+      { name: "BitBucket", icon: <FaGitAlt className="text-orange-600 text-3xl" /> },
+      { name: "Docker", icon: <FaDocker className="text-blue-500 text-3xl" /> },
+      { name: "Linux", icon: <FaLinux className="text-green-700 text-3xl" /> },
+      { name: "Git", icon: <FaGitAlt className="text-orange-600 text-3xl" /> },
+      { name: "FastAPI", icon: <SiFastapi className="text-green-500 text-3xl" /> },
+      { name: "MongoDB", icon: <SiMongodb className="text-green-600 text-3xl" /> },
+      { name: "PyQT", icon: <FaPython className="text-blue-500 text-3xl" /> },
+      { name: "Tkinter", icon: <FaPython className="text-blue-500 text-3xl" /> },
       {
         name: "Tailwind CSS",
-        icon: <SiTailwindcss className="text-blue-400" />,
+        icon: <SiTailwindcss className="text-blue-400 text-3xl" />,
       },
-      { name: "Pandas", icon: <FaPython className="text-blue-500" /> },
-      { name: "Numpy", icon: <FaPython className="text-blue-500" /> },
-      { name: "Seaborn", icon: <FaPython className="text-blue-500" /> },
-      { name: "SwiftUI", icon: <FaSwift className="text-orange-400" /> },
-      { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-700" /> },
-      { name: "React.js", icon: <FaReact className="text-blue-400" /> },
-      { name: "Express.js", icon: <FaNodeJs className="text-green-500" /> },
-      { name: "SpringBoot", icon: <SiSpringboot className="text-green-600" /> },
+      { name: "Pandas", icon: <FaPython className="text-blue-500 text-3xl" /> },
+      { name: "Numpy", icon: <FaPython className="text-blue-500 text-3xl" /> },
+      { name: "Seaborn", icon: <FaPython className="text-blue-500 text-3xl" /> },
+      { name: "SwiftUI", icon: <FaSwift className="text-orange-400 text-3xl" /> },
+      { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-700 text-3xl" /> },
+      { name: "React.js", icon: <FaReact className="text-blue-400 text-3xl" /> },
+      { name: "Express.js", icon: <FaNodeJs className="text-green-500 text-3xl" /> },
+      { name: "SpringBoot", icon: <SiSpringboot className="text-green-600 text-3xl" /> },
     ],
   };
 
@@ -297,12 +293,13 @@ function App() {
 
   return (
     <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-300">
+      {/* Navigation */}
       <nav className="fixed top-0 left-0 w-full bg-white dark:bg-gray-800 shadow-md z-50">
         <div className="max-w-4xl mx-auto px-4 py-2 flex justify-between items-center">
           <h1 className="text-xl font-bold text-gray-900 dark:text-gray-100">
             Varun Deep Saini
           </h1>
-          <div className="space-x-4 hidden md:block">
+          <div className="space-x-4 flex-wrap hidden sm:flex">
             <a
               href="#education"
               className="cursor-pointer text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300"
@@ -348,7 +345,9 @@ function App() {
         </div>
       </nav>
 
+      {/* Main Content */}
       <div className="max-w-4xl mx-auto p-4 font-sans pt-20">
+        {/* Profile Section */}
         <motion.div
           className="text-center my-8 p-6 rounded-lg bg-gradient-to-r from-blue-100 to-indigo-200 dark:from-gray-800 dark:to-gray-900"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -364,53 +363,61 @@ function App() {
           <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100">
             Varun Deep Saini
           </h1>
-          <div className="flex justify-center space-x-4 mt-2 text-gray-600 dark:text-gray-400">
-            <div className="flex items-center">
-        <FaPhone className="mr-1" /> +917840993353
-        <button
-          onClick={handleCopyPhone}
-          className="ml-2 px-2 py-1 bg-gray-300 dark:bg-gray-700 rounded text-sm hover:bg-gray-400 dark:hover:bg-gray-600 transition-colors duration-300"
-        >
-          Copy
-        </button>
-      </div>
+          <div className="flex flex-col items-center space-y-2 mt-4 text-gray-600 dark:text-gray-400">
+            <div className="flex flex-col sm:flex-row items-center">
+              <div className="flex items-center">
+                <FaPhone className="mr-1" /> +917840993353
+              </div>
+              <button
+                onClick={handleCopyPhone}
+                className="mt-2 sm:mt-0 sm:ml-2 px-3 py-1 bg-gray-300 dark:bg-gray-700 rounded text-sm hover:bg-gray-400 dark:hover:bg-gray-600 transition-colors duration-300"
+              >
+                Copy
+              </button>
+            </div>
 
-      <div className="flex items-center mt-2">
-        <FaEnvelope className="mr-1" /> deepsainivarun@gmail.com
-        <button
-          onClick={handleCopyEmail}
-          className="ml-2 px-2 py-1 bg-gray-300 dark:bg-gray-700 rounded text-sm hover:bg-gray-400 dark:hover:bg-gray-600 transition-colors duration-300"
-        >
-          Copy
-        </button>
-      </div>
-            <a
-              href="https://linkedin.com/in/varundeepsaini"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300"
-            >
-              <FaLinkedin className="mr-1" /> LinkedIn
-            </a>
-            <a
-              href="https://github.com/varundeepsaini"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300"
-            >
-              <FaGithub className="mr-1" /> GitHub
-            </a>
+            <div className="flex flex-col sm:flex-row items-center">
+              <div className="flex items-center">
+                <FaEnvelope className="mr-1" /> deepsainivarun@gmail.com
+              </div>
+              <button
+                onClick={handleCopyEmail}
+                className="mt-2 sm:mt-0 sm:ml-2 px-3 py-1 bg-gray-300 dark:bg-gray-700 rounded text-sm hover:bg-gray-400 dark:hover:bg-gray-600 transition-colors duration-300"
+              >
+                Copy
+              </button>
+            </div>
+
+            <div className="flex space-x-4 mt-2">
+              <a
+                href="https://linkedin.com/in/varundeepsaini"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300"
+              >
+                <FaLinkedin className="mr-1" /> LinkedIn
+              </a>
+              <a
+                href="https://github.com/varundeepsaini"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300"
+              >
+                <FaGithub className="mr-1" /> GitHub
+              </a>
+            </div>
           </div>
           <a
             href="https://drive.google.com/file/d/your-resume-link/view"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors duration-300"
+            className="inline-block mt-6 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors duration-300"
           >
             View Resume PDF (Google Drive)
           </a>
         </motion.div>
 
+        {/* Education Section */}
         <section id="education" className="mb-8">
           <h2 className="flex items-center text-2xl font-semibold border-b-2 border-gray-300 dark:border-gray-600 pb-1 text-gray-900 dark:text-gray-100">
             <FaGraduationCap className="mr-2 text-blue-600 dark:text-blue-400" />
@@ -439,6 +446,7 @@ function App() {
           </div>
         </section>
 
+        {/* Achievements Section */}
         <section id="achievements" className="mb-8">
           <h2 className="flex items-center text-2xl font-semibold border-b-2 border-gray-300 dark:border-gray-600 pb-1 text-gray-900 dark:text-gray-100">
             <FaChalkboardTeacher className="mr-2 text-blue-600 dark:text-blue-400" />
@@ -467,6 +475,7 @@ function App() {
           </ul>
         </section>
 
+        {/* Projects Section */}
         <section id="projects" className="mb-8">
           <h2 className="flex items-center text-2xl font-semibold border-b-2 border-gray-300 dark:border-gray-600 pb-1 text-gray-900 dark:text-gray-100">
             💻 Projects
@@ -475,7 +484,7 @@ function App() {
             {projects.map((project, index) => (
               <motion.div
                 key={index}
-                className="border-l-4 border-blue-500 dark:border-blue-400 pl-4 bg-gray-50 dark:bg-gray-800 rounded-md p-4 shadow-md"
+                className="border-l-4 border-blue-500 dark:border-blue-400 pl-4 bg-gray-50 dark:bg-gray-800 rounded-md p-4 shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-300"
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -508,16 +517,17 @@ function App() {
           </div>
         </section>
 
+        {/* Skills Section */}
         <section id="skills" className="mb-8">
           <h2 className="flex items-center text-2xl font-semibold border-b-2 border-gray-300 dark:border-gray-600 pb-1 text-gray-900 dark:text-gray-100">
             🛠️ Technical Skills
           </h2>
-          <div className="mt-4 flex justify-items-center gap-6">
+          <div className="mt-4 flex flex-col md:flex-row gap-8">
             <div>
               <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-2">
                 Languages:
               </h3>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
                 {technicalSkills.languages.map((lang, index) => (
                   <div key={index} className="flex flex-col items-center">
                     {lang.icon}
@@ -530,7 +540,7 @@ function App() {
               <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-2">
                 Technologies/Frameworks:
               </h3>
-              <div className="grid grid-cols-6 gap-1">
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
                 {technicalSkills.technologies.map((tech, index) => (
                   <div key={index} className="flex flex-col items-center">
                     {tech.icon}
@@ -542,6 +552,7 @@ function App() {
           </div>
         </section>
 
+        {/* Leadership Section */}
         <section id="leadership" className="mb-8">
           <h2 className="flex items-center text-2xl font-semibold border-b-2 border-gray-300 dark:border-gray-600 pb-1 text-gray-900 dark:text-gray-100">
             <FaUsers className="mr-2 text-blue-600 dark:text-blue-400" />
@@ -572,26 +583,29 @@ function App() {
           </div>
         </section>
 
+        {/* Coursework Section */}
         <section className="mb-8">
           <h2 className="text-2xl font-semibold border-b-2 border-gray-300 dark:border-gray-600 pb-1 text-gray-900 dark:text-gray-100">
             📚 Relevant Coursework
           </h2>
-          <div className="mt-4 columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-2">
-            <ul className="list-disc list-inside space-y-1">
-              {coursework.map((course, index) => (
-                <li key={index} className="text-gray-600 dark:text-gray-400">
-                  {course}
-                </li>
-              ))}
-            </ul>
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+            {coursework.map((course, index) => (
+              <div key={index}>
+                <ul className="list-disc list-inside space-y-1">
+                  <li className="text-gray-600 dark:text-gray-400">{course}</li>
+                </ul>
+              </div>
+            ))}
           </div>
         </section>
 
+        {/* Footer */}
         <footer className="text-center mt-8 text-gray-500 dark:text-gray-400">
           © {new Date().getFullYear()} Varun Deep Saini. All rights reserved.
         </footer>
       </div>
 
+      {/* Scroll to Top Button */}
       <AnimatePresence>
         {showScroll && (
           <motion.button
