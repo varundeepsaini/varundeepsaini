@@ -99,14 +99,13 @@ function App() {
     document.body.appendChild(popup);
     setTimeout(() => {
       popup.classList.add("opacity-100");
-    }, 100); // slight delay to ensure transition
-
+    }, 100); 
     setTimeout(() => {
       popup.classList.remove("opacity-100");
       setTimeout(() => {
         document.body.removeChild(popup);
-      }, 300); // remove after fading out
-    }, 750); // show for 0.75 seconds
+      }, 300); 
+    }, 750); 
   };
 
   const handleCopyPhone = () => {
@@ -293,7 +292,6 @@ function App() {
 
   return (
     <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-300">
-      {/* Navigation */}
       <nav className="fixed top-0 left-0 w-full bg-white dark:bg-gray-800 shadow-md z-50">
         <div className="max-w-4xl mx-auto px-4 py-2 flex justify-between items-center">
           <h1 className="text-xl font-bold text-gray-900 dark:text-gray-100">
@@ -345,9 +343,7 @@ function App() {
         </div>
       </nav>
 
-      {/* Main Content */}
       <div className="max-w-4xl mx-auto p-4 font-sans pt-20">
-        {/* Profile Section */}
         <motion.div
           className="text-center my-8 p-6 rounded-lg bg-gradient-to-r from-blue-100 to-indigo-200 dark:from-gray-800 dark:to-gray-900"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -417,7 +413,6 @@ function App() {
           </a>
         </motion.div>
 
-        {/* Education Section */}
         <section id="education" className="mb-8">
           <h2 className="flex items-center text-2xl font-semibold border-b-2 border-gray-300 dark:border-gray-600 pb-1 text-gray-900 dark:text-gray-100">
             <FaGraduationCap className="mr-2 text-blue-600 dark:text-blue-400" />
@@ -446,7 +441,6 @@ function App() {
           </div>
         </section>
 
-        {/* Achievements Section */}
         <section id="achievements" className="mb-8">
           <h2 className="flex items-center text-2xl font-semibold border-b-2 border-gray-300 dark:border-gray-600 pb-1 text-gray-900 dark:text-gray-100">
             <FaChalkboardTeacher className="mr-2 text-blue-600 dark:text-blue-400" />
@@ -475,7 +469,6 @@ function App() {
           </ul>
         </section>
 
-        {/* Projects Section */}
         <section id="projects" className="mb-8">
           <h2 className="flex items-center text-2xl font-semibold border-b-2 border-gray-300 dark:border-gray-600 pb-1 text-gray-900 dark:text-gray-100">
             💻 Projects
@@ -517,7 +510,6 @@ function App() {
           </div>
         </section>
 
-        {/* Skills Section */}
         <section id="skills" className="mb-8">
           <h2 className="flex items-center text-2xl font-semibold border-b-2 border-gray-300 dark:border-gray-600 pb-1 text-gray-900 dark:text-gray-100">
             🛠️ Technical Skills
@@ -552,7 +544,6 @@ function App() {
           </div>
         </section>
 
-        {/* Leadership Section */}
         <section id="leadership" className="mb-8">
           <h2 className="flex items-center text-2xl font-semibold border-b-2 border-gray-300 dark:border-gray-600 pb-1 text-gray-900 dark:text-gray-100">
             <FaUsers className="mr-2 text-blue-600 dark:text-blue-400" />
@@ -583,7 +574,6 @@ function App() {
           </div>
         </section>
 
-        {/* Coursework Section */}
         <section className="mb-8">
           <h2 className="text-2xl font-semibold border-b-2 border-gray-300 dark:border-gray-600 pb-1 text-gray-900 dark:text-gray-100">
             📚 Relevant Coursework
@@ -599,13 +589,11 @@ function App() {
           </div>
         </section>
 
-        {/* Footer */}
         <footer className="text-center mt-8 text-gray-500 dark:text-gray-400">
           © {new Date().getFullYear()} Varun Deep Saini. All rights reserved.
         </footer>
       </div>
 
-      {/* Scroll to Top Button */}
       <AnimatePresence>
         {showScroll && (
           <motion.button
