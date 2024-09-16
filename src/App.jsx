@@ -334,13 +334,28 @@ function App() {
           <div className="flex justify-center space-x-4 mt-2 text-gray-600 dark:text-gray-400">
             <div className="flex items-center">
               <FaPhone className="mr-1" /> +917840993353
+              <button
+                onClick={() => navigator.clipboard.writeText("+917840993353")}
+                className="ml-2 px-2 py-1 bg-gray-300 dark:bg-gray-700 rounded text-sm hover:bg-gray-400 dark:hover:bg-gray-600 transition-colors duration-300"
+              >
+                Copy
+              </button>
             </div>
+
             <a
               href="mailto:deepsainivarun@gmail.com"
               className="flex items-center hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300"
             >
               <FaEnvelope className="mr-1" /> deepsainivarun@gmail.com
             </a>
+            <button
+              onClick={() =>
+                navigator.clipboard.writeText("deepsainivarun@gmail.com")
+              }
+              className="px-2 py-1 bg-gray-300 dark:bg-gray-700 rounded text-sm hover:bg-gray-400 dark:hover:bg-gray-600 transition-colors duration-300"
+            >
+              Copy
+            </button>
             <a
               href="https://linkedin.com/in/varundeepsaini"
               target="_blank"
@@ -358,6 +373,14 @@ function App() {
               <FaGithub className="mr-1" /> GitHub
             </a>
           </div>
+          <a
+            href="https://drive.google.com/file/d/your-resume-link/view"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors duration-300"
+          >
+            View Resume PDF (Google Drive)
+          </a>
         </motion.div>
 
         <section id="education" className="mb-8">
