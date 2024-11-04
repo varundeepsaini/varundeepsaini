@@ -6,7 +6,7 @@ Welcome to my GitHub Page! I'm Varun, deeply passionate about technology, coding
 
 - 🎓 Pursuing a dual degree in Computer Science.
 - 📚 Passionate about Competitive Programming, iOS / Android Development, and Machine Learning.
-- 🏆 Expert on Codeforces, ICPC Regionalist.
+- 🏆 Candidate Master on Codeforces, ICPC Regionalist.
 
 ## 🔭 Projects
 
@@ -24,7 +24,7 @@ Here are some of my highlighted projects:
 
 ## 🏆 Achievements
 
-- [Expert @Codeforces](https://cp-logo.vercel.app/codeforces/sojabhai?logo=true) 
+- [Candidate Master @Codeforces](https://cp-logo.vercel.app/codeforces/sojabhai?logo=true) 
 - **AIR - 75 ICPC Asia West Regionals 2023**
 ## 👨‍💻 Leadership
 
